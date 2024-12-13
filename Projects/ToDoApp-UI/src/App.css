@@ -1,0 +1,18 @@
+h1{
+    font-weight: 500;
+    font-size: 35px;
+    margin: 20px;
+   
+}
+input{
+    width: 100%;
+}
+.items-container{
+    text-align: left;
+}
+.Td-row{
+    margin: 10px 5px;
+}
+.Td-Btn{
+    width: 90px;
+}
