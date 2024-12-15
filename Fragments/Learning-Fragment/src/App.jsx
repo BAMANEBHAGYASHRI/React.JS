@@ -22,7 +22,7 @@ function App() {
 
 //Map method
 
-    <ul class="list-group">{fruitItems.map((item) => (<li class="list-group-item">{item}</li>) )}
+    <ul class="list-group">{fruitItems.map((item) => (<li  key="{item}" class="list-group-item">{item}</li>) )}
     </ul>
   );
 }
