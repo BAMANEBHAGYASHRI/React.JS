@@ -1,11 +1,15 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
+import FruitItems from './Components/FruitItems';
+import ErrorMessage from './Components/ErrorMessage';
 
 function App() {
   let fruitItems = ['Apple' , 'Banana', 'cheery','DragonnFruit','Papaya'];
+  // let fruitItems= [];
   return( 
-//   <React.Fragment>
+    <>
+{/* //   <React.Fragment>
 //     <h1>Fruit List</h1>
 //   <div class="list-group">
 //   <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
@@ -17,14 +21,15 @@ function App() {
 //   <button type="button" class="list-group-item list-group-item-action" disabled>Dragon-Fruit</button>
 // </div>
 // </React.Fragment>
-//   );
+//   ); */}
 
+{/* //Map method */}
+<h1>Healthy food</h1>
+  <ErrorMessage items={fruitItems}></ErrorMessage>
+    <FruitItems items={fruitItems} ></FruitItems>
+    </>
 
-//Map method
-
-    <ul class="list-group">{fruitItems.map((item) => (<li  key="{item}" class="list-group-item">{item}</li>) )}
-    </ul>
   );
 }
+ export default App;
 
-export default App
